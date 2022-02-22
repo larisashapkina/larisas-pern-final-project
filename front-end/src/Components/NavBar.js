@@ -6,7 +6,7 @@ function NavBar() {
       <h1>
         <Link to="/stilettos">Stilettos</Link>
       </h1>
-      <button>
+      <button className="New-button">
         <Link to="/stilettos/new">New Stiletto</Link>
       </button>
     </nav>

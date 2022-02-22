@@ -1,7 +1,7 @@
 function Home() {
     return (
-      <div>
-        <h3>Designer stilettos app</h3>
+      <div className="Welcome">
+        <h3>Designer stilettos live here</h3>
       </div>
     );
   }
