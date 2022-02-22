@@ -2,6 +2,8 @@
 const cors = require("cors");
 const express = require("express");
 
+const stilettoController = require("./controllers/stilettoController.js");
+
 // CONFIGURATION
 const app = express();
 
@@ -11,26 +13,13 @@ app.use(express.json()); // Parse incoming JSON
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.send("Hello, stilettos!");
 });
 
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
-const db = require("./db/dbConfig.js");
+app.use("/stilettos", stilettoController)
 
-app.get("/test", async (req, res) => {
-  try {
-    const allDays = await db.any("SELECT * FROM test");
-    res.json(allDays);
-  } catch (err) {
-    res.json(err);
-  }
-});
-
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
-
+app.get("*", (req,res)=>{
+  res.status(404).send("Page Not Found")
+})
 // EXPORT
 module.exports = app;
