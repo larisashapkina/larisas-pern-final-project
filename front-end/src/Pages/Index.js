@@ -3,7 +3,7 @@ import Stilettos from "../Components/Stilettos";
 function Index() {
   return (
     <div className="Index">
-      <h2>All Stilettos</h2>
+      <h2>Please check out the most fabulous stilettos of all time</h2>
       <Stilettos />
     </div>
   );

@@ -5,7 +5,7 @@ function Stiletto({stiletto}) {
     <div className="Stiletto">
        <Link to={`/stilettos/${stiletto.id}`}>
         <h4>{stiletto.name}</h4>
-      </Link>
+        </Link>
       <img src={stiletto.image} alt={stiletto.name}></img>
       <div>{stiletto.description}</div>
       <div>${stiletto.price}</div>
@@ -15,6 +15,7 @@ function Stiletto({stiletto}) {
         ) : (
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}</div>
+      
     </div>
   );
 }

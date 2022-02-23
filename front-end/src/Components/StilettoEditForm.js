@@ -80,7 +80,7 @@ function StilettoEditForm() {
             value={stiletto.rating}
             type="text"
             onChange={handleTextChange}
-            placeholder="Rating"
+            placeholder="Please submit from 0 to 5"
             />
             <br />
             <input type="submit" />

@@ -31,11 +31,17 @@ function StilettoDetails() {
 
   return (
     <article className = "">
-    <div className = "Stiletto">
-    <h5>Stiletto name: {stiletto.name}</h5>
-      <h6>Stiletto description: {stiletto.description}</h6>
-      <h6>Price: {stiletto.price}</h6>
-      <h6>Rating: {stiletto.rating}</h6>
+    <div className = "">
+      <h5>Stiletto name: {stiletto.name}</h5>
+      <h5>Stiletto description: {stiletto.description}</h5>
+      <h5>Price: ${stiletto.price}</h5>
+      <h5>Rating: {stiletto.rating}</h5>
+      <h5>Featured:{stiletto.featured ? (
+          <span>⭐️</span>
+        ) : (
+          <span>&nbsp; &nbsp; &nbsp;</span>
+        )}</h5>
+
     </div>
     <div className="showNavigation">
       <div>
