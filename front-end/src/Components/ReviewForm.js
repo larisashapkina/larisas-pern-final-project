@@ -16,8 +16,10 @@ function ReviewForm(props) {
   const handleTextChange = (event) => {
     setReview({ ...review, [event.target.id]: event.target.value });
   };
+  
 /**
- * if our form getting review details 
+ * if our form is getting review details passed down as a prop, that means we are editing an exisiting pre-filled review
+ * if not tthat mean we are creating a new review
  */
   useEffect(() => {
     if (reviewDetails) {

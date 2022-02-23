@@ -87,11 +87,11 @@ input[type="submit"] {
 
 }
 
-.showNavigation {
+/* .showNavigation {
   display: flex;
-  justify-content: space-around;
-  width: 50px;
-}
+  justify-content: space-between;
+  width: 100px;
+} */
 
 .Reviews {
   background-color: whitesmoke;
