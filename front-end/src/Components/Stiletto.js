@@ -9,9 +9,9 @@ function Stiletto({stiletto}) {
       <img src={stiletto.image} alt={stiletto.name}></img>
       <div>{stiletto.description}</div>
       <div>${stiletto.price}</div>
-      <div>Rating: {stiletto.rating}</div>
+      <div>Rating: {("⭐️").repeat(stiletto.rating)}</div>
       <div>{stiletto.featured ? (
-          <span>⭐️</span>
+          <span>👠</span>
         ) : (
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}</div>

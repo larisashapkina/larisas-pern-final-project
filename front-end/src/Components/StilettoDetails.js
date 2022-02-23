@@ -36,10 +36,7 @@ function StilettoDetails() {
       <h5>Stiletto description: {stiletto.description}</h5>
       <h5>Price: ${stiletto.price}</h5>
       <h5>Rating: {stiletto.rating}</h5>
-      <h5>Featured:{stiletto.featured ? (
-          <span>⭐️</span>
-        ) : (
-          <span>&nbsp; &nbsp; &nbsp;</span>
+      <h5>Featured:{stiletto.featured? (<span>👠</span>) : (<span>&nbsp; &nbsp; &nbsp;</span>
         )}</h5>
 
     </div>
