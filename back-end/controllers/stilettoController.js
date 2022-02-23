@@ -1,7 +1,10 @@
 const express = require("express");
 const stilettos = express.Router();
 const { getAllStilettos, getOneStiletto, deleteStiletto, createStiletto, updateStiletto } = require("../queries/stilettos.js");
-
+const reviewsController = require("./reviewsController.js");
+//we bring our reviews controller into stiletto controller so that when we nest this routes so we have an access whats happening in our reviews controller
+stilettos.use("/:stilettoId/reviews", reviewsController);
+//
 
 stilettos.get("/", async (req, res) => {
   try {
