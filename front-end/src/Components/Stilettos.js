@@ -20,13 +20,6 @@ function Stilettos() {
     <div className="Stilettos">
       <section>
         <table>
-          <thead>
-            <tr>
-              <th></th>
-              {/* <th>Take me there</th>
-              <th>See this stiletto</th> */}
-            </tr>
-          </thead>
           <tbody>
             {stilettos.map((stiletto) => {
               return <Stiletto key={stiletto.id} stiletto={stiletto} />;

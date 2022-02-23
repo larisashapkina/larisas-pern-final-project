@@ -97,6 +97,7 @@ input[type="submit"] {
   background-color: whitesmoke;
   padding: 1em;
   box-shadow: 2px 2px 4px silver;
+  width: 50%;
 }
 
 .Reviews > div {
@@ -111,13 +112,6 @@ input[type="submit"] {
 .Stiletto img{
   width: 150px
 }
-
-/* article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1em;
-} */
 
 .Welcome h3{
      text-transform: uppercase;
