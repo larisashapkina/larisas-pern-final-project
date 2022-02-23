@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS stilettos;
 CREATE TABLE stilettos (
     id SERIAL PRIMARY KEY, 
     name TEXT NOT NUll,
+    image TEXT,
     description TEXT,
     price INTEGER,
     rating NUMERIC,
