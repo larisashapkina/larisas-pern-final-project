@@ -46,7 +46,6 @@ tbody td:not(td:first-of-type):hover {
 
 .New{
   font-family: fantasy;
-  /* background-color: tomato; */
 }
 
 .New form {
@@ -109,6 +108,11 @@ color:blue;
   background-color: aliceblue;
 }
 
+.Review button{
+  margin: 10px;
+  border-radius: 70px;
+}
+
 .Stiletto img{
   width: 150px
 }
@@ -161,20 +165,19 @@ color:blue;
  .footer{
    background:#303036;
    color:#d3d3d3;
-   height: 400px;
+   height: 250px;
    position: relative;
  }
 
- .footer .footer-content{
-   border: 1px solid red;
-   height: 350px;
-   display: flex
+ .footer .footer-content .footer-section{
+   padding: 10px;
  }
 
- .footer .footer-content .footer-section{
-   flex: 1;
-   padding: 25px;
-   border: 1px solid white;
+ .footer .footer-content .about h1{
+  color: #05f7ff;
+ }
+ .footer .footer-content .about .contact span{
+   display:block;
  }
  .footer .footer-bottom{
    background: #343a40;
@@ -188,7 +191,4 @@ color:blue;
    padding-top: 20px;
  }
 
- .Review button{
-   margin: 10px;
-   border-radius: 70px;
- }
+ 
