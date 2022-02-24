@@ -73,10 +73,6 @@ textarea {
   margin: auto;
 }
 
-input[type="checkbox"] {
-  margin: 0;
-  width: 15%;
-}
 
 input[type="submit"] {
   width: 20%;
@@ -86,13 +82,17 @@ input[type="submit"] {
   color: #fff;
 
 }
+.Show h2{
+font-size: 35px;
+font-family: cursive;
+color:blue;
+}
 
-/* .showNavigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-} */
-
+.st-details {
+  font-size: 25px;
+  line-height: 50px;
+  
+}
 .Reviews {
   background-color: whitesmoke;
   padding: 1em;
@@ -186,4 +186,9 @@ input[type="submit"] {
    bottom:0px;
    left: 0px;
    padding-top: 20px;
+ }
+
+ .Review button{
+   margin: 10px;
+   border-radius: 70px;
  }
